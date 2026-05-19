@@ -2,8 +2,8 @@
 
 # Enum
  `nmap -sC -sV -T4 -vv -oN nmap.txt 10.129.32.34`
- 22 ssh open, 80http
-# Virutal Host Fuzzing
+ 22 ssh, 80http
+# Virtual Host Fuzzing
 `ffuf -u "http://silentium.htb/" -H "Host: FUZZ.silentium.htb" -w /usr/share/wordlists/SecLists/Discovery/DNS/subdomains-top1million-5000.txt -fc 301`
 
 `staging                 [Status: 200, Size: 3142, Words: 789, Lines: 70, Duration: 36ms]`
